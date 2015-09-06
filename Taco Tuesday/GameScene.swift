@@ -8,34 +8,61 @@
 
 import SpriteKit
 
+
+// Simple Scalling Animations
+let wiggleIn = SKAction.scaleXTo(1.0, duration: 0.2)
+let wiggleOut = SKAction.scaleXTo(1.2, duration: 0.2)
+let wiggle = SKAction.sequence([wiggleIn, wiggleOut])
+let wiggleRepeat = SKAction.repeatActionForever(wiggle)
+
+let liftUp = SKAction.scaleTo(1.2, duration: 0.2)
+let dropDown = SKAction.scaleTo(1.0, duration: 0.2)
+
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 45;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+        print("made it here")
         
-        self.addChild(myLabel)
+        let wolf = Card(imageNamed: "Wolf")
+        wolf.position = CGPointMake(100,200)
+        addChild(wolf)
+        
+        let bear = Card(imageNamed: "Bear")
+        bear.position = CGPointMake(300, 200)
+        addChild(bear)
+        
+    }
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        for touch in touches {
+            let location = touch.locationInNode(self)
+            let touchedNode = nodeAtPoint(location)
+            touchedNode.position = location
+        }
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
-        
         for touch in touches {
+            // Move the touched catd forward in the z plane
             let location = touch.locationInNode(self)
+            let touchedNode = nodeAtPoint(location)
+            touchedNode.zPosition = 15
             
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
+            // animate the card up by scalling up to 1.2 size over .2 seconds
+            touchedNode.runAction(liftUp)
+        }
+    }
+    
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        for touch in touches {
+            // Move the touched catd back in the z plane
+            let location = touch.locationInNode(self)
+            let touchedNode = nodeAtPoint(location)
+            touchedNode.zPosition = 0
             
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+            // animate the card down to normal size
+            touchedNode.runAction(dropDown)
         }
     }
    
