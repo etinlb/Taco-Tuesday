@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0131211B9DFE7B001AC6C6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0131201B9DFE7B001AC6C6 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		7E0131231B9DFF2B001AC6C6 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0131221B9DFF2B001AC6C6 /* cards.json */; settings = {ASSET_TAGS = (); }; };
+		7E0131251B9E06F3001AC6C6 /* CustomerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0131241B9E06F3001AC6C6 /* CustomerCard.swift */; settings = {ASSET_TAGS = (); }; };
 		7E8241A61B9BB1B700B5A53F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241A51B9BB1B700B5A53F /* AppDelegate.swift */; };
 		7E8241AA1B9BB1B700B5A53F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241A91B9BB1B700B5A53F /* GameScene.swift */; };
 		7E8241AC1B9BB1B700B5A53F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241AB1B9BB1B700B5A53F /* GameViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E0131201B9DFE7B001AC6C6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		7E0131221B9DFF2B001AC6C6 /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cards.json; path = Assets.xcassets/Cards.dataset/cards.json; sourceTree = "<group>"; usesTabs = 0; };
+		7E0131241B9E06F3001AC6C6 /* CustomerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerCard.swift; sourceTree = "<group>"; };
 		7E8241A21B9BB1B700B5A53F /* Taco Tuesday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taco Tuesday.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8241A51B9BB1B700B5A53F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E8241A91B9BB1B700B5A53F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		7E8241A41B9BB1B700B5A53F /* Taco Tuesday */ = {
 			isa = PBXGroup;
 			children = (
+				7E0131201B9DFE7B001AC6C6 /* SwiftyJSON.swift */,
 				7E8241A51B9BB1B700B5A53F /* AppDelegate.swift */,
 				7E8241A91B9BB1B700B5A53F /* GameScene.swift */,
 				7E8241AB1B9BB1B700B5A53F /* GameViewController.swift */,
@@ -108,7 +115,9 @@
 				7E8241B01B9BB1B700B5A53F /* Assets.xcassets */,
 				7E8241B21B9BB1B700B5A53F /* LaunchScreen.storyboard */,
 				7E8241B51B9BB1B700B5A53F /* Info.plist */,
+				7E0131221B9DFF2B001AC6C6 /* cards.json */,
 				7E8241D71B9BB2C000B5A53F /* Card.swift */,
+				7E0131241B9E06F3001AC6C6 /* CustomerCard.swift */,
 			);
 			path = "Taco Tuesday";
 			sourceTree = "<group>";
@@ -240,6 +249,7 @@
 				7E8241B41B9BB1B700B5A53F /* LaunchScreen.storyboard in Resources */,
 				7E8241B11B9BB1B700B5A53F /* Assets.xcassets in Resources */,
 				7E8241AF1B9BB1B700B5A53F /* Main.storyboard in Resources */,
+				7E0131231B9DFF2B001AC6C6 /* cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +277,9 @@
 				7E8241AA1B9BB1B700B5A53F /* GameScene.swift in Sources */,
 				7E8241AC1B9BB1B700B5A53F /* GameViewController.swift in Sources */,
 				7E8241A61B9BB1B700B5A53F /* AppDelegate.swift in Sources */,
+				7E0131211B9DFE7B001AC6C6 /* SwiftyJSON.swift in Sources */,
 				7E8241D81B9BB2C000B5A53F /* Card.swift in Sources */,
+				7E0131251B9E06F3001AC6C6 /* CustomerCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +506,7 @@
 				7E8241D01B9BB1B700B5A53F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E8241D11B9BB1B700B5A53F /* Build configuration list for PBXNativeTarget "Taco TuesdayTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +515,7 @@
 				7E8241D31B9BB1B700B5A53F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E8241D41B9BB1B700B5A53F /* Build configuration list for PBXNativeTarget "Taco TuesdayUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +524,7 @@
 				7E8241D61B9BB1B700B5A53F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
