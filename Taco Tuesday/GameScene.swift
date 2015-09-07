@@ -20,8 +20,8 @@ let dropDown = SKAction.scaleTo(1.0, duration: 0.2)
 
 class GameScene: SKScene {
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        print("made it here")
+        // read json rings
+        buildCards("cards")
         
         let wolf = Card(cardName: Card.CardName.CreatureWolf)
         wolf.position = CGPointMake(100,200)
@@ -53,6 +53,35 @@ class GameScene: SKScene {
         /* Called before each frame is rendered */
     }
     
+    func buildCards(filePath: String){
+        var cardData = readJson(filePath)
+        
+        let customers = cardData["customers"]
+        let food = cardData["food"]
+        
+        let otherBear = CustomerCard(cardData: customers[0])
+        
+        print(customers)
+        print(food)
     }
+    
+    func readJson(filePath: String) -> JSON {
+        let fullFilePath = NSBundle.mainBundle().pathForResource(filePath,ofType:"json")
+        var jsonData: NSData?
+        var readError:NSError?
+        
+        do {
+            let data = try NSData(contentsOfFile:fullFilePath!,
+                options: NSDataReadingOptions.DataReadingUncached)
+            jsonData = data
+        } catch let error as NSError {
+            readError = error
+        } catch {
+            fatalError()
+        }
+        
+        let json = JSON(data: jsonData!)
+        
+        return json
     }
 }

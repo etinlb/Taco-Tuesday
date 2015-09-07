@@ -1,0 +1,41 @@
+{
+    "customers": [
+                  {
+                  "food": {
+                  "cheese": 3,
+                  "meat": 4,
+                  "produce": 2
+                  },
+                  "score": 6,
+                  "title": "fatGuy"
+                  },
+                  {
+                  "food": {
+                  "cheese": 3,
+                  "meat": 4,
+                  "produce": 2
+                  },
+                  "score": 0,
+                  "title": "fatGuy"
+                  }
+                  ],
+    
+    "food":[
+            {
+            "type":"meat",
+            "name":"poop",
+            "score":"-9"
+            },
+            {
+            "type":"cheese",
+            "name":"green shit",
+            "score":"1"
+            },
+            {
+            "type":"produce",
+            "name":"lettuce",
+            "score":"1"
+            }
+            ]
+    
+}
