@@ -1,41 +1,56 @@
 {
-    "customers": [
-                  {
-                  "food": {
-                  "cheese": 3,
-                  "meat": 4,
-                  "produce": 2
-                  },
-                  "score": 6,
-                  "title": "fatGuy"
-                  },
-                  {
-                  "food": {
-                  "cheese": 3,
-                  "meat": 4,
-                  "produce": 2
-                  },
-                  "score": 0,
-                  "title": "fatGuy"
-                  }
-                  ],
-    
-    "food":[
+    "customer_deck":
+    [
+        {
+            "score": 6,
+            "type" :"fat_guy",
+            "food":
             {
-            "type":"meat",
-            "name":"poop",
-            "score":"-9"
-            },
-            {
-            "type":"cheese",
-            "name":"green shit",
-            "score":"1"
-            },
-            {
-            "type":"produce",
-            "name":"lettuce",
-            "score":"1"
+                "cheese": 3,
+                "meat": 4,
+                "produce": 2
             }
-            ]
-    
+        },
+        {
+            "score": 0,
+            "type": "food_critic",
+            "food":
+            {
+                "cheese": 3,
+                "meat": 4,
+                "produce": 2
+            }
+        }
+    ],
+    "customer_types":
+    {
+        "fat_guy":
+        {
+            "image" : "Fat Guy",
+            "title": "fatGuy",
+        },
+        "food_critic":
+        {
+            "image" : "Food Critic",
+            "title": "foodCritic"
+        }
+    },
+    "food":
+    [
+        {
+            "name": "poop",
+            "score": "-9",
+            "type": "meat"
+        },
+        {
+            "name": "green shit",
+            "score": "1",
+            "type": "cheese"
+        },
+        {
+            "name": "lettuce",
+            "score": "1",
+            "type": "produce"
+        }
+    ]
 }
