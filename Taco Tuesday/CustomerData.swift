@@ -38,7 +38,7 @@ class CustomerCardData : CardData
         self.texture = textureName;
     }
     
-    static func initFromJson( cardData : JSON ) -> CardData
+    static func initFromJson( _ cardData : JSON ) -> CardData
     {
         let foodData      = cardData[foodKey]
         let cheeseNeeded  = foodData[cheeseKey].int16!
@@ -56,7 +56,7 @@ class CustomerCardData : CardData
         return customerData
     }
     
-    static func initializeTextureMap( textureData : JSON )
+    static func initializeTextureMap( _ textureData : JSON )
     {
         let data = textureData.dictionary!
         

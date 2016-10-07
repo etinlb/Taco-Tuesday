@@ -9,6 +9,6 @@
 import Foundation
 
 
-enum CardCreationError: ErrorType {
-    case TextureMapNotIntialized
+enum CardCreationError: Error {
+    case textureMapNotIntialized
 }

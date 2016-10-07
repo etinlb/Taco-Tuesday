@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E0131211B9DFE7B001AC6C6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0131201B9DFE7B001AC6C6 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
-		7E0131251B9E06F3001AC6C6 /* CustomerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0131241B9E06F3001AC6C6 /* CustomerCard.swift */; settings = {ASSET_TAGS = (); }; };
-		7E0CAEE31B9E2B56003C3105 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAEE21B9E2B56003C3105 /* cards.json */; settings = {ASSET_TAGS = (); }; };
+		7E0131211B9DFE7B001AC6C6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0131201B9DFE7B001AC6C6 /* SwiftyJSON.swift */; };
+		7E0131251B9E06F3001AC6C6 /* CustomerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0131241B9E06F3001AC6C6 /* CustomerCard.swift */; };
+		7E0CAEE31B9E2B56003C3105 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAEE21B9E2B56003C3105 /* cards.json */; };
+		7E2F54721BA37BA400EC8373 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F54711BA37BA400EC8373 /* Game.swift */; };
+		7E2F54741BA37BB100EC8373 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2F54731BA37BB100EC8373 /* GameBoard.swift */; };
+		7E5F5BD51BA68E9300BC4FB6 /* GameLayout.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7E5F5BD41BA68E9300BC4FB6 /* GameLayout.sks */; };
 		7E8241A61B9BB1B700B5A53F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241A51B9BB1B700B5A53F /* AppDelegate.swift */; };
 		7E8241AA1B9BB1B700B5A53F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241A91B9BB1B700B5A53F /* GameScene.swift */; };
 		7E8241AC1B9BB1B700B5A53F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241AB1B9BB1B700B5A53F /* GameViewController.swift */; };
@@ -18,7 +21,11 @@
 		7E8241B41B9BB1B700B5A53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8241B21B9BB1B700B5A53F /* LaunchScreen.storyboard */; };
 		7E8241BF1B9BB1B700B5A53F /* Taco_TuesdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241BE1B9BB1B700B5A53F /* Taco_TuesdayTests.swift */; };
 		7E8241CA1B9BB1B700B5A53F /* Taco_TuesdayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241C91B9BB1B700B5A53F /* Taco_TuesdayUITests.swift */; };
-		7E8241D81B9BB2C000B5A53F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241D71B9BB2C000B5A53F /* Card.swift */; settings = {ASSET_TAGS = (); }; };
+		7E8241D81B9BB2C000B5A53F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8241D71B9BB2C000B5A53F /* Card.swift */; };
+		7EE9D6531BAF5B2300FCB60D /* CustomerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE9D6521BAF5B2300FCB60D /* CustomerData.swift */; };
+		7EE9D6571BAF621B00FCB60D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE9D6561BAF621B00FCB60D /* Errors.swift */; };
+		7EF7E76C1BAA07B8000C5DF5 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF7E76B1BAA07B8000C5DF5 /* Deck.swift */; };
+		7EF7E76E1BAB5D30000C5DF5 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF7E76D1BAB5D30000C5DF5 /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,9 @@
 		7E0131201B9DFE7B001AC6C6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		7E0131241B9E06F3001AC6C6 /* CustomerCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerCard.swift; sourceTree = "<group>"; };
 		7E0CAEE21B9E2B56003C3105 /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
+		7E2F54711BA37BA400EC8373 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7E2F54731BA37BB100EC8373 /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		7E5F5BD41BA68E9300BC4FB6 /* GameLayout.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameLayout.sks; sourceTree = "<group>"; };
 		7E8241A21B9BB1B700B5A53F /* Taco Tuesday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Taco Tuesday.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8241A51B9BB1B700B5A53F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E8241A91B9BB1B700B5A53F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -57,6 +67,10 @@
 		7E8241C91B9BB1B700B5A53F /* Taco_TuesdayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taco_TuesdayUITests.swift; sourceTree = "<group>"; };
 		7E8241CB1B9BB1B700B5A53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E8241D71B9BB2C000B5A53F /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7EE9D6521BAF5B2300FCB60D /* CustomerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerData.swift; sourceTree = "<group>"; };
+		7EE9D6561BAF621B00FCB60D /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		7EF7E76B1BAA07B8000C5DF5 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		7EF7E76D1BAB5D30000C5DF5 /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +132,13 @@
 				7E0CAEE21B9E2B56003C3105 /* cards.json */,
 				7E8241D71B9BB2C000B5A53F /* Card.swift */,
 				7E0131241B9E06F3001AC6C6 /* CustomerCard.swift */,
+				7E5F5BD41BA68E9300BC4FB6 /* GameLayout.sks */,
+				7E2F54711BA37BA400EC8373 /* Game.swift */,
+				7E2F54731BA37BB100EC8373 /* GameBoard.swift */,
+				7EF7E76B1BAA07B8000C5DF5 /* Deck.swift */,
+				7EF7E76D1BAB5D30000C5DF5 /* CardData.swift */,
+				7EE9D6521BAF5B2300FCB60D /* CustomerData.swift */,
+				7EE9D6561BAF621B00FCB60D /* Errors.swift */,
 			);
 			path = "Taco Tuesday";
 			sourceTree = "<group>";
@@ -208,15 +229,18 @@
 					7E8241A11B9BB1B700B5A53F = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 5NC8XB4HRE;
+						LastSwiftMigration = 0800;
 					};
 					7E8241B91B9BB1B700B5A53F = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 5NC8XB4HRE;
+						LastSwiftMigration = 0800;
 						TestTargetID = 7E8241A11B9BB1B700B5A53F;
 					};
 					7E8241C41B9BB1B700B5A53F = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = 5NC8XB4HRE;
+						LastSwiftMigration = 0800;
 						TestTargetID = 7E8241A11B9BB1B700B5A53F;
 					};
 				};
@@ -250,6 +274,7 @@
 				7E8241B11B9BB1B700B5A53F /* Assets.xcassets in Resources */,
 				7E8241AF1B9BB1B700B5A53F /* Main.storyboard in Resources */,
 				7E0CAEE31B9E2B56003C3105 /* cards.json in Resources */,
+				7E5F5BD51BA68E9300BC4FB6 /* GameLayout.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EE9D6531BAF5B2300FCB60D /* CustomerData.swift in Sources */,
+				7EF7E76C1BAA07B8000C5DF5 /* Deck.swift in Sources */,
 				7E8241AA1B9BB1B700B5A53F /* GameScene.swift in Sources */,
 				7E8241AC1B9BB1B700B5A53F /* GameViewController.swift in Sources */,
+				7E2F54721BA37BA400EC8373 /* Game.swift in Sources */,
 				7E8241A61B9BB1B700B5A53F /* AppDelegate.swift in Sources */,
+				7EF7E76E1BAB5D30000C5DF5 /* CardData.swift in Sources */,
+				7EE9D6571BAF621B00FCB60D /* Errors.swift in Sources */,
+				7E2F54741BA37BB100EC8373 /* GameBoard.swift in Sources */,
 				7E0131211B9DFE7B001AC6C6 /* SwiftyJSON.swift in Sources */,
 				7E8241D81B9BB2C000B5A53F /* Card.swift in Sources */,
 				7E0131251B9E06F3001AC6C6 /* CustomerCard.swift in Sources */,
@@ -423,6 +454,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "boomshockalocka.Taco-Tuesday";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -434,6 +467,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "boomshockalocka.Taco-Tuesday";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -446,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "boomshockalocka.Taco-TuesdayTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taco Tuesday.app/Taco Tuesday";
 			};
 			name = Debug;
@@ -458,6 +494,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "boomshockalocka.Taco-TuesdayTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taco Tuesday.app/Taco Tuesday";
 			};
 			name = Release;
@@ -470,6 +507,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "boomshockalocka.Taco-TuesdayUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Taco Tuesday";
 				USES_XCTRUNNER = YES;
 			};
@@ -482,6 +520,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "boomshockalocka.Taco-TuesdayUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Taco Tuesday";
 				USES_XCTRUNNER = YES;
 			};

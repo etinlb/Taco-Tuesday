@@ -56,7 +56,7 @@ class Game
         print(customer)
     }
     
-    func buildCards( filePath: String )
+    func buildCards( _ filePath: String )
     {
         
         print( self.gameScene.size )
@@ -77,13 +77,13 @@ class Game
         
     }
     
-    func readJson( filePath: String ) -> JSON
+    func readJson( _ filePath: String ) -> JSON
     {
-        let fullFilePath = NSBundle.mainBundle().pathForResource( filePath, ofType: "json" )
-        var jsonData: NSData?
+        let fullFilePath = Bundle.main.path( forResource: filePath, ofType: "json" )
+        var jsonData: Data?
         
         do {
-            let data = try NSData( contentsOfFile:fullFilePath!, options: NSDataReadingOptions.DataReadingUncached )
+            let data = try Data( contentsOf: URL(fileURLWithPath: fullFilePath!), options: NSData.ReadingOptions.uncached )
             jsonData = data
         } catch let error as NSError {
             print( error )

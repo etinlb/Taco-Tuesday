@@ -11,6 +11,6 @@ import Foundation
 // protocal that specifies creating a card data class from some json
 protocol CardData
 {
-    static func initFromJson( cardData : JSON ) -> CardData
+    static func initFromJson( _ cardData : JSON ) -> CardData
     var texture: String { get }
 }

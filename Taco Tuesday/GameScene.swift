@@ -11,7 +11,7 @@ import Foundation
 
 class GameScene: SKScene
 {
-    override func didMoveToView( view: SKView )
+    override func didMove( to view: SKView )
     {
         // read json rings
         // TODO: This should return a dictionary or something and call a 
@@ -21,7 +21,7 @@ class GameScene: SKScene
         game.start()
     }
     
-    override func update(currentTime: CFTimeInterval)
+    override func update(_ currentTime: TimeInterval)
     {
         /* Called before each frame is rendered */
 //        print(self.size)

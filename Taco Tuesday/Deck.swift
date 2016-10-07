@@ -19,7 +19,7 @@ let deckTexture = SKTexture( imageNamed: "Card Back" )
 class Deck : SKSpriteNode
 {
     // Read the deck
-    init ( cardDeck : [JSON], makeCardData : (JSON) -> (CardData), MakeCard: (CardData) -> (Card) )
+    init ( cardDeck : [JSON], makeCardData : (JSON) -> (CardData), MakeCard: @escaping (CardData) -> (Card) )
     {
         cardCreator = MakeCard
         self.cards = [CardData]()
@@ -30,7 +30,7 @@ class Deck : SKSpriteNode
             self.cards.append( cardData )
         }
         
-        super.init( texture: deckTexture, color: UIColor.blueColor(), size: deckTexture.size() )
+        super.init( texture: deckTexture, color: UIColor.blue, size: deckTexture.size() )
     }
     
     func drawCard() -> ( Card )

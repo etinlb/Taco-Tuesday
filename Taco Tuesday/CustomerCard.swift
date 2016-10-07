@@ -30,7 +30,7 @@ class CustomerCard : Card
         fatalError( "init(coder:) has not been implemented" )
     }
     
-    static func makeCard( cardData: CardData ) -> Card
+    static func makeCard( _ cardData: CardData ) -> Card
     {
         let customerCardData = cardData as! CustomerCardData
         return CustomerCard( cardData: customerCardData )

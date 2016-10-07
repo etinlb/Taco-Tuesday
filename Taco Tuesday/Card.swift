@@ -11,17 +11,17 @@ import SpriteKit
 
 // TODO: Have a seperate animation class that defines all the 
 // scalling relative to a global scale
-let firstHalfFlip = SKAction.scaleXTo( 0.0, duration: 0.4 )
-let secondHalfFlip = SKAction.scaleXTo( 1.0, duration: 0.4 )
+let firstHalfFlip = SKAction.scaleX( to: 0.0, duration: 0.4 )
+let secondHalfFlip = SKAction.scaleX( to: 1.0, duration: 0.4 )
 
 // Simple Scalling Animations
-let wiggleIn = SKAction.scaleXTo( 1.0, duration: 0.2 )
-let wiggleOut = SKAction.scaleXTo( 1.2, duration: 0.2 )
+let wiggleIn = SKAction.scaleX( to: 1.0, duration: 0.2 )
+let wiggleOut = SKAction.scaleX( to: 1.2, duration: 0.2 )
 let wiggle = SKAction.sequence( [wiggleIn, wiggleOut] )
-let wiggleRepeat = SKAction.repeatActionForever( wiggle )
+let wiggleRepeat = SKAction.repeatForever( wiggle )
 
-let liftUp = SKAction.scaleTo( 1.2, duration: 0.2 )
-let dropDown = SKAction.scaleTo( 1.0, duration: 0.2 )
+let liftUp = SKAction.scale( to: 1.2, duration: 0.2 )
+let dropDown = SKAction.scale( to: 1.0, duration: 0.2 )
 
 class Card : SKSpriteNode
 {
@@ -36,14 +36,14 @@ class Card : SKSpriteNode
         backTexture = SKTexture( imageNamed: backTextureFile )
         frontTexture = SKTexture( imageNamed: frontTextureFile )
         
-        super.init( texture: frontTexture, color: UIColor.blueColor(), size: frontTexture.size() )
+        super.init( texture: frontTexture, color: UIColor.blue, size: frontTexture.size() )
         
-        userInteractionEnabled = true
+        isUserInteractionEnabled = true
     }
     
-    override func touchesMoved( touches: Set<UITouch>, withEvent event: UIEvent? ) {
+    override func touchesMoved( _ touches: Set<UITouch>, with event: UIEvent? ) {
         for touch in touches {
-            let location = touch.locationInNode( scene! )
+            let location = touch.location( in: scene! )
             self.position = location
 
 //            let point = CGPoint(x: 200, y: 200)
@@ -54,7 +54,7 @@ class Card : SKSpriteNode
     }
     
     /* Called when a touch begins */
-    override func touchesBegan( touches: Set<UITouch>, withEvent event: UIEvent? ) {
+    override func touchesBegan( _ touches: Set<UITouch>, with event: UIEvent? ) {
 
         for touch in touches
         {
@@ -67,11 +67,11 @@ class Card : SKSpriteNode
             self.zPosition = 15
             
             // animate the card up by scalling up to 1.2 size over .2 seconds
-            self.runAction( liftUp, withKey: "pickup" )
+            self.run( liftUp, withKey: "pickup" )
         }
     }
     
-    override func touchesEnded( touches: Set<UITouch>, withEvent event: UIEvent? )
+    override func touchesEnded( _ touches: Set<UITouch>, with event: UIEvent? )
     {
         for _ in touches
         {
@@ -79,7 +79,7 @@ class Card : SKSpriteNode
             self.zPosition = 0
             
             // animate the card down to normal size
-            self.runAction( dropDown, withKey: "drop" )
+            self.run( dropDown, withKey: "drop" )
         }
     }
     
@@ -89,21 +89,21 @@ class Card : SKSpriteNode
         
         if faceUp
         {
-            runAction( firstHalfFlip )
-            {
+            run( firstHalfFlip, completion: {
                 self.texture = self.backTexture
                 self.faceUp = false
                 
-                self.runAction( secondHalfFlip )
-            }
+                self.run( secondHalfFlip )
+            } )
+            
         } else {
-            runAction( firstHalfFlip )
-            {
+            run( firstHalfFlip, completion: {
                 self.texture = self.frontTexture
                 self.faceUp = true
                 
-                self.runAction( secondHalfFlip )
-            }
+                self.run( secondHalfFlip )
+            } )
+            
         }
     }
  
